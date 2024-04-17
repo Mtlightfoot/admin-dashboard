@@ -29,14 +29,42 @@
     color: white;
 }
 
+.sidebar-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border: 1px solid red;
+}
+
+.sidebar-item-1 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    border: 1px solid blue;
+}
+
+.sidebar-item-2 {
+    grid-column: 1 / 5;
+    grid-row: 3 / 5;
+    border: 1px solid blue;
+}
+
+.sidebar-item-3 {
+    grid-column: 1 / 5;
+    grid-row: 6 / 8;
+    border: 1px solid blue;
+}
+
 .navbar {
     grid-column: 3 / 13;
     grid-row: 1 / 4;
     background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px 0px;
+    position: relative;
 }
 
 .main {
     grid-column: 3 / 13;
-    grid-row: 4 / 17;   
+    grid-row: 4 / 17;
     background-color: #E5EDF1;
 }
